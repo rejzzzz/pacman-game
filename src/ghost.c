@@ -86,7 +86,8 @@ void moveGhost(Entity* ghost, Entity* pacman, int maze[ROWS][COLS]) {
         // Update the last move time
         lastMoveTime = currentTime;
     }
-    printf("Ghost Position: (%d, %d) Pac-Man Position: (%d, %d)\n", ghost->pos.x, ghost->pos.y, pacman->pos.x, pacman->pos.y);
+    //for debugging
+    //printf("Ghost Position: (%d, %d) Pac-Man Position: (%d, %d)\n", ghost->pos.x, ghost->pos.y, pacman->pos.x, pacman->pos.y);
 
     
 }
