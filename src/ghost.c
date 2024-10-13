@@ -52,7 +52,7 @@ bool dfs(int maze[ROWS][COLS], int x, int y, int targetX, int targetY) {
     visited[x][y] = false; // Mark as unvisited so other paths can explore this cell
 
     // Debugging output to track the backtracking
-    printf("Backtracking from: (%d, %d)\n", x, y);
+    //printf("Backtracking from: (%d, %d)\n", x, y);
     return false;
 }
 
