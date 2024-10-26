@@ -4,20 +4,20 @@
 
 ## Description
 
-This project is an ongoing development of a Pac-Man game, created using C and SDL2. The goal is to implement a fully functional version of the classic Pac-Man game, featuring a playable character (Pac-Man) and AI-controlled ghosts. Currently, the ghost utilizes Depth-First Search (DFS) to navigate the maze and attempt to find the optimal path to Pac-Man.(Note: There is also a bfs file if you want to try that, just change the ghost.c to ghost-bfs.c in Makefile)
+This project is an ongoing development of a Pac-Man game, created using C and SDL. The goal is to implement a fully functional version of the classic Pac-Man game, featuring a playable character (Pac-Man) and AI-controlled ghosts. Currently, the ghost utilizes Dijkstra's Algorithm to navigate the maze and attempt to find the optimal path to Pac-Man.
 
 
 ## Features
 
 - **Pac-Man Movement**: Control Pac-Man using keyboard inputs.
-- **Ghost AI**: The ghost uses DFS to navigate the maze and chase Pac-Man.
+- **Ghost AI**: The ghost uses Dijkstra's Algorithm to navigate the maze and chase Pac-Man.
 - **Maze Layout**: A grid-based maze where walls are represented, and paths are clear for movement.
-- **Basic Rendering**: Graphics are rendered using the SDL2 library.
+- **Basic Rendering**: Graphics are rendered using the SDL library(in C).
 
 ## Technologies Used
 
 - **C**: Programming language used for game logic and structure.
-- **SDL2**: A cross-platform library for multimedia and graphics.
+- **SDL**: A cross-platform library for multimedia and graphics.
 - **Makefile**: Used for building the project and managing compilation.
 
 ## Installation
@@ -54,5 +54,3 @@ make
 ./pacman
 
 ```
-
-
