@@ -3,19 +3,21 @@
 
 #include <SDL2/SDL.h>
 
-// Structure for position (x, y coordinates)
+
 typedef struct {
-    int x; // X position (Column in the maze)
-    int y; // Y position (Row in the maze)
+    int x; 
+    int y; 
 } Position;
 
-// Structure for an entity (Pac-Man, Ghosts, etc.)
 typedef struct {
-    Position pos;  // Entity's current position in the maze
-    int direction; // Movement direction (could be defined as an enum for directions)
-    int speed;     // Speed of the entity's movement
+    Position pos;  
+    int direction; 
+    int speed;     
 } Entity;
 
+#endif  
 
 
-#endif  // ENTITY_H
+
+
+

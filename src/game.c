@@ -4,6 +4,7 @@
 #include "ghost.h"
 #include "graphics.h"
 #include<stdio.h>
+#include "config.h"
 #include<stdlib.h>
 #include <SDL2/SDL.h>
 
@@ -15,8 +16,8 @@ int initializeGame() {
         return 0;
     }
 
-    pacman = (Entity) {{1, 1}, 0, 1};  // Pac-Man at (1, 1), direction 0, speed 1
-    ghost = (Entity) {{19, 3}, 0, 1};  // Ghost at (10, 5), direction 0, speed 1
+    pacman = (Entity) {{19, 19}, 0, 1};  
+    ghost = (Entity) {{19, 3}, 0, 1};  
 
 
     return 1;
@@ -25,7 +26,7 @@ int initializeGame() {
 void runGame() {
     int quit = 0;
     SDL_Event e;
-    Uint32 lastGhostMoveTime = 0;  // Store last ghost movement time
+    Uint32 lastGhostMoveTime = 0;  
 
     while (!quit) {
         while (SDL_PollEvent(&e) != 0) {
@@ -37,8 +38,8 @@ void runGame() {
         }
     
     Uint32 currentTime = SDL_GetTicks();
-    if (currentTime - lastGhostMoveTime >= 500) 
-    {  //every 0.5 secs the ghost moves
+    if (currentTime - lastGhostMoveTime >= ghost_movement_interval) 
+    {  
         moveGhost(&ghost, &pacman, maze);  // Move ghost
         lastGhostMoveTime = currentTime;   // Update last movement time
     }
