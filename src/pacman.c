@@ -19,14 +19,14 @@ void movePacman(SDL_Event* e, Entity* pacman, int maze[ROWS][COLS]) {
 
         // Check boundaries and wall collision
         if (newX >= 0 && newX < ROWS && newY >= 0 && newY < COLS) {
-            // Assuming 1 is a path and 0 is a wall in the maze array
-            if (maze[newX][newY] != WALL) {  // Move only if the new position is not a wall
+            
+            if (maze[newX][newY] != WALL) {  
                 pacman->pos.x = newX;
                 pacman->pos.y = newY;
             }
         }
     }
-    //printf("Pac-Man Position: (%d, %d)\n", pacman->pos.x, pacman->pos.y);
+    
 
 }
 
