@@ -2,6 +2,8 @@
 
 ### Warning: The project is still not complete(runs partially).
 
+![alt text](https://github.com/rejzzzz/pacman-game/tree/main/game-image.png)
+
 ## Description
 
 This project is an ongoing development of a Pac-Man game, created using C and SDL. The goal is to implement a fully functional version of the classic Pac-Man game, featuring a playable character (Pac-Man) and AI-controlled ghosts. Currently, the ghost utilizes Dijkstra's Algorithm to navigate the maze and attempt to find the optimal path to Pac-Man.
