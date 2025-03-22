@@ -2,7 +2,7 @@
 
 ### Warning: The project is still not complete(runs partially).
 
-![alt text](https://github.com/rejzzzz/pacman-game/tree/main/game-image.png)
+![alt text](https://github.com/rejzzzz/pacman-game/blob/main/game-image.png)
 
 ## Description
 
